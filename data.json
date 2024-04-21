@@ -1,0 +1,14 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "\u5206\u7ec41",
+      "notes": [
+        {
+          "name": "\u7b14\u8bb01",
+          "content": "test"
+        }
+      ]
+    }
+  ]
+}
