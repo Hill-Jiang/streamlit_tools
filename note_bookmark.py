@@ -128,12 +128,12 @@ class NoteBookmarkPage:
                 ss.creating_group = False
                 st.success(f"分组 **{group_name}** 创建成功")
                 time.sleep(1)
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.warning("请填写分组名称")
         if cancel_button:
             ss.creating_group = False
-            st.experimental_rerun()
+            st.rerun()
 
     def _delete_group_form(self, group_id):
         """
@@ -151,10 +151,10 @@ class NoteBookmarkPage:
             ss[f"delete_group_{group_id}"] = False
             st.success("已删除")
             time.sleep(1)
-            st.experimental_rerun()
+            st.rerun()
         elif cancel_button:
             ss[f"delete_group_{group_id}"] = False
-            st.experimental_rerun()
+            st.rerun()
 
     def _update_group_name_form(self, group_id):
         """
@@ -172,10 +172,10 @@ class NoteBookmarkPage:
             ss[f"rename_group_{group_id}"] = False
             st.success("已修改")
             time.sleep(1)
-            st.experimental_rerun()
+            st.rerun()
         elif cancel_button:
             ss[f"rename_group_{group_id}"] = False
-            st.experimental_rerun()
+            st.rerun()
 
     def _create_note_form(self, group_id):
         """
@@ -195,12 +195,12 @@ class NoteBookmarkPage:
                 ss[f"creating_note_of_{group_id}"] = False
                 st.success("已保存")
                 time.sleep(1)
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.warning("请填写名称/内容")
         elif cancel_button:
             ss[f"creating_note_of_{group_id}"] = False
-            st.experimental_rerun()
+            st.rerun()
 
     def _update_note_form(self, group_id, note_index):
         """
@@ -222,10 +222,10 @@ class NoteBookmarkPage:
             ss[f"update_note_{group_id}_{note_index}"] = False
             st.success("已保存")
             time.sleep(1)
-            st.experimental_rerun()
+            st.rerun()
         elif cancel_button:
             ss[f"update_note_{group_id}_{note_index}"] = False
-            st.experimental_rerun()
+            st.rerun()
 
     def _delete_note_form(self, group_id, note_index):
         """
@@ -244,10 +244,10 @@ class NoteBookmarkPage:
             ss[f"delete_note_{group_id}_{note_index}"] = False
             st.success("已删除")
             time.sleep(1)
-            st.experimental_rerun()
+            st.rerun()
         elif cancel_button:
             ss[f"delete_note_{group_id}_{note_index}"] = False
-            st.experimental_rerun()
+            st.rerun()
 
     def display_notes(self, group_id):
         """
