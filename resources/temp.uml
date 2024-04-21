@@ -1,1 +1,39 @@
-
+@startjson
+{
+    "name": "John Doe",
+    "age": 33,
+    "isEmployed": true,
+    "score": 98.75,
+    "address": {
+        "street": "123 Main St.",
+        "city": "New York",
+        "country": "USA"
+    },
+    "hobbies": [
+        "reading",
+        "painting",
+        "gaming"
+    ],
+    "lastLogin": null,
+    "specialCharacters": "Hello, World! °üº¬ÌØÊâ×Ö·û: @#$%^&*()_+{}[]|;':\",./<>?",
+    "favoriteNumbers": [
+        42,
+        0.5,
+        3.14,
+        -1000
+    ],
+    "nestedArray": [
+        [
+            "apple",
+            "banana"
+        ],
+        [
+            "orange",
+            {
+                "type": "kiwi",
+                "color": "green"
+            }
+        ]
+    ]
+}
+@endjson
